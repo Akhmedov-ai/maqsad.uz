@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image } from 'react-native'
+import { Image, Platform } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import icons from '../data/icons'
 import Order from './screen/Order/Order'
@@ -31,7 +31,7 @@ const TabNavigator = function ({ navigation }) {
         }}>
             <Tab.Screen options={{
                 tabBarLabel: 'Документы',
-                tabBarLabelStyle: { color: '#000000', marginBottom: 20 },
+                tabBarLabelStyle: { color: '#000000', marginBottom: Platform.OS === 'ios' ? 0 : 20 },
                 tabBarIcon: ({ focused }) => (
                     <TabButton icon={!focused ? icons.home : icons.activeHome}
                     />
@@ -41,7 +41,7 @@ const TabNavigator = function ({ navigation }) {
 
             <Tab.Screen options={{
                 tabBarLabel: 'Уведомления',
-                tabBarLabelStyle: { color: '#000000', marginBottom: 20 },
+                tabBarLabelStyle: { color: '#000000', marginBottom: Platform.OS === 'ios' ? 0 : 20 },
                 tabBarIcon: ({ focused }) => (
                     <TabButton icon={!focused ? icons.notification : icons.activeNotification}
                     />
@@ -49,7 +49,7 @@ const TabNavigator = function ({ navigation }) {
             }} name="Notification" component={Bell} />
             <Tab.Screen options={{
                 tabBarLabel: 'Меню',
-                tabBarLabelStyle: { color: '#000000', marginBottom: 20 },
+                tabBarLabelStyle: { color: '#000000', marginBottom: Platform.OS === 'ios' ? 0 : 20 },
                 tabBarIcon: () => (
                     <TabButton icon={icons.menu}
                     />
