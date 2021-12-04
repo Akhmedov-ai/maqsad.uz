@@ -2,10 +2,9 @@ import React from 'react'
 import { Image, Platform } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import icons from '../data/icons'
-import Order from './screen/Order/Order'
 import Menu from './screen/Menu/Menu'
 import Home from './screen/Home/Home'
-import Bell from './screen/Bell/Bell'
+import Notification from './screen/Bell/Bell'
 
 const TabButton = function ({ icon, isFocused }) {
     return (
@@ -46,7 +45,7 @@ const TabNavigator = function ({ navigation }) {
                     <TabButton icon={!focused ? icons.notification : icons.activeNotification}
                     />
                 ),
-            }} name="Notification" component={Bell} />
+            }} name="Notification" component={Notification} />
             <Tab.Screen options={{
                 tabBarLabel: 'Меню',
                 tabBarLabelStyle: { color: '#000000', marginBottom: Platform.OS === 'ios' ? 0 : 20 },

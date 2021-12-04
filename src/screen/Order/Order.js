@@ -6,4 +6,3 @@ const Order = () => (
         <Text>Home</Text>
     </View>
 )
-export default Order
