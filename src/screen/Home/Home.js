@@ -70,16 +70,16 @@ export default function Home() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 marginHorizontal: 20,
-                                height: 440,
-                                width: 315,
+                                height: Platform.OS === 'ios' ? SIZES.height * 0.55 : SIZES.height * 0.6,
+                                width: SIZES.width * 0.88,
                             }}>
                             <Animated.View
                                 style={{
                                     padding: SPACING * 2,
                                     alignItems: 'center',
                                     transform: [{ translateY }],
-                                    width: '100%',
-                                    height: '100%',
+                                    height: Platform.OS === 'ios' ? SIZES.height * 0.55 : SIZES.height * 0.6,
+                                    width: SIZES.width * 0.88,
                                     borderRadius: 30,
                                     borderColor: '#EEEEEE',
                                     borderWidth: 2,
@@ -132,7 +132,6 @@ export default function Home() {
                                         alignItems: 'flex-start',
                                         flexDirection: 'column',
                                         justifyContent: 'space-around',
-
                                     }}>
                                         <Title title={item.title} subTitle="Республики Узбекистан" />
                                         <Card
@@ -169,8 +168,9 @@ export default function Home() {
                                     index === 2 && (
                                         <View style={{
                                             flex: 1,
-                                            flexDirection: 'column',
+                                            width: '80%',
                                             alignItems: 'flex-start',
+                                            flexDirection: 'column',
                                             justifyContent: 'space-around',
                                         }}>
                                             <Title title={item.title} />
