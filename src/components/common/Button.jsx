@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native'
 
-export default function Button({ onPress, color = 'black', style, loading, textStyle, title, icon }) {
+export default function Button({ onPress, color = 'black', style, loading, textStyle, title, icon, contStyle }) {
     return (
-        <View style={styles.container}>
+        <View style={{ ...styles.container, ...contStyle }}>
             <TouchableOpacity onPress={onPress} style={{
                 ...styles.button,
                 backgroundColor: color,

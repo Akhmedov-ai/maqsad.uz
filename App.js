@@ -4,8 +4,9 @@ import { NavigationContainer } from '@react-navigation/native'
 import TabNavigator from './src/TabNavigator'
 import Auth from './src/screen/Auth'
 import SignIn from './src/screen/SignIn'
-import Bank from './src/screen/Bank'
+import OneId from './src/screen/OneId'
 import Joined from './src/screen/Joined'
+import PinCode from './src/screen/PinCode'
 
 const Stack = createStackNavigator()
 
@@ -18,7 +19,8 @@ const App = () => (
             <Stack.Screen name="Home" options={{ headerShown: false }} component={TabNavigator} />
             <Stack.Screen name="Auth" options={{ headerShown: false }} component={Auth} />
             <Stack.Screen name="SignIn" component={SignIn} />
-            <Stack.Screen name="Bank" component={Bank} />
+            <Stack.Screen name="PinCode" component={PinCode} />
+            <Stack.Screen name="OneId" component={OneId} />
             <Stack.Screen name="Joined" component={Joined} />
         </Stack.Navigator>
     </NavigationContainer>
