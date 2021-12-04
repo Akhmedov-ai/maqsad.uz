@@ -10,7 +10,6 @@ const { height } = Dimensions.get('screen')
 export default function SignIn() {
     const [check, setCheck] = useState(false)
     const navigation = useNavigation()
-    const [active, setActive] = useState(true)
 
     return (
         <View>
@@ -19,7 +18,7 @@ export default function SignIn() {
 
                 <Container style={{ flex: 1 }}>
                     <Text style={styles.subTitle}>
-                        Шаг 1 из 2
+                        Шаг 1 из 3
                     </Text>
 
                     <Text style={styles.title}>
@@ -55,11 +54,16 @@ export default function SignIn() {
             </View>
 
             <View style={styles.bottomContent}>
-                <Button
-                    disabled={!active}
-                    onPress={() => navigation.navigate('Joined')}
-                    title="Войти через One ID"
-                    style={{ width: 220, height: 50 }} />
+                {check ? (
+                    <Button
+                        onPress={() => navigation.navigate('OneId')}
+                        title="Продолжить"
+                        style={{ width: 220, height: 50 }} />
+                ) : (
+                    <View style={styles.unChecked}>
+                        <Text style={styles.unCheckedText}>Продолжить</Text>
+                    </View>
+                )}
             </View>
         </View>
     )
@@ -109,5 +113,18 @@ const styles = StyleSheet.create({
         width: 343,
         alignItems: 'center',
         marginVertical: 10,
+    },
+    unChecked: {
+        width: 220,
+        height: 50,
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 20,
+    },
+    unCheckedText: {
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: '700',
     },
 })

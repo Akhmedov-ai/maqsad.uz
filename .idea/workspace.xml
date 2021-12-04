@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="set">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Raleway-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Raleway-Medium.ttf" afterDir="false" />
-=======
-    <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/screen/Auth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
->>>>>>> ce4770d682f701774d15b036b6d1f859d3dcfaf5
+    <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="pin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TabNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TaxCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaxCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/Bell/Bell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Bell/Bell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/Order/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Order/Order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/PinCode.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/PinCode.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +19,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="21mmSVCcjD6uSGHwNAg5YfWZrzE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,11 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="eslint.code.style.apply.dismiss" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/fonts" />
-=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> ce4770d682f701774d15b036b6d1f859d3dcfaf5
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,13 +48,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="$PROJECT_DIR$/assets/fonts" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/src" />
-=======
->>>>>>> ce4770d682f701774d15b036b6d1f859d3dcfaf5
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -75,12 +60,8 @@
       <option name="presentableId" value="Default" />
       <updated>1638554637687</updated>
       <workItem from="1638554638972" duration="402000" />
-<<<<<<< HEAD
-      <workItem from="1638603545328" duration="10810000" />
-      <workItem from="1638623294732" duration="5289000" />
-=======
       <workItem from="1638603545328" duration="2591000" />
->>>>>>> ce4770d682f701774d15b036b6d1f859d3dcfaf5
+      <workItem from="1638637337088" duration="6171000" />
     </task>
     <task id="LOCAL-00001" summary="set">
       <created>1638602046839</created>
