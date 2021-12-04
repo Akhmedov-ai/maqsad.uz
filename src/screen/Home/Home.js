@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Text,
     View,
     StyleSheet,
@@ -15,7 +15,7 @@ import TaxCard from '../../components/TaxCard'
 import SelectButton from '../../components/common/SelectButton'
 import Header from '../../components/Header'
 import { titleList } from '../../../data/api'
-import { SIZES } from '../../../data/theme'
+import { COLORS, SIZES } from '../../../data/theme'
 import icons from '../../../data/icons'
 
 const SPACING = -10
@@ -25,11 +25,38 @@ export default function Home() {
     const [movies, setMovies] = React.useState([])
     const scrollX = React.useRef(new Animated.Value(0)).current
     const flatListRef = useRef()
-
+    const [currentIndex, setCurrentIndex] = useState()
     useEffect(() => {
         setMovies(titleList)
     }, [])
 
+    const onViewRef = React.useRef((viewableItems) => {
+        setCurrentIndex(viewableItems.viewableItems[0].index)
+    })
+    const viewConfigRef = React.useRef({ viewAreaCoveragePercentThreshold: 50 })
+
+    function renderDot() {
+        return (
+            <View style={{
+                flex: 1,
+                flexDirection: 'row',
+                justifyContent: 'center',
+            }}>
+                {
+                    titleList.map((item, index) => (
+                        <View style={{
+                            backgroundColor: index === currentIndex ? COLORS.lightGrey : COLORS.gray,
+                            width: index === currentIndex ? 9.51 : 7,
+                            height: index === currentIndex ? 9.51 : 7,
+                            borderRadius: 888,
+                            marginLeft: 6,
+                            bottom: index === currentIndex ? 1 : 0,
+                        }} />
+                    ))
+                }
+            </View>
+        )
+    }
     return (
         <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
             <Header title="Документы" />
@@ -38,6 +65,8 @@ export default function Home() {
                 showsHorizontalScrollIndicator={false}
                 data={movies}
                 horizontal
+                onViewableItemsChanged={onViewRef.current}
+                viewabilityConfig={viewConfigRef.current}
                 keyExtractor={(item) => `${item.id}`}
                 bounces={false}
                 decelerationRate={Platform.OS === 'ios' ? 0 : 0.98}
@@ -248,6 +277,7 @@ export default function Home() {
                     )
                 }}
             />
+            {renderDot()}
         </View>
     )
 }
