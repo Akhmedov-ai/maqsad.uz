@@ -12,6 +12,7 @@ const TaxCard = ({ date, containerStyle }) => (
                 Тимур Бакаев
             </Text>
             <Text style={{
+                fontFamily: 'Bold',
                 fontSize: 18,
                 color: '#222628',
                 fontWeight: 'bold',
