@@ -8,11 +8,11 @@ import Button from '../components/common/Button'
 
 const { height } = Dimensions.get('screen')
 
-export default function Auth() {
+export default function Joined() {
     const navigation = useNavigation()
 
     function onSubmit() {
-        navigation.navigate('SignIn')
+        navigation.navigate('Home')
     }
 
     return (
@@ -27,18 +27,23 @@ export default function Auth() {
                     </View>
 
                     <Text style={{ fontWeight: '700', fontSize: 22, marginTop: 20 }}>
-                        Цифровые документы
+                        Добро пожаловать!
                     </Text>
 
                     <Text style={{ fontWeight: '500', fontSize: 12, marginTop: 15 }}>
-                        ID – карточка, загранпаспорт, студенческий билет, водительское
-                        удостоверение, справка ВПЛ и другие
+                        Мы ежедневно работаем над тем, чтобы сделать
+                        вашу жизнь удобнее.
+                    </Text>
+
+                    <Text style={{ fontWeight: '500', fontSize: 12, marginTop: 15 }}>
+                        Теперь важные документы будут всегла доступны
+                        в смартфоне.
                     </Text>
                 </Container>
             </View>
 
             <View style={styles.bottomContent}>
-                <Button title="Войти" onPress={onSubmit} style={{ width: 180, height: 50 }} />
+                <Button title="Перейти к документам" onPress={onSubmit} style={{ width: 240, height: 50 }} />
             </View>
         </View>
     )
