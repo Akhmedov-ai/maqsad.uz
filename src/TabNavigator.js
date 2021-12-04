@@ -27,7 +27,7 @@ const TabNavigator = function ({ navigation }) {
     return (
         <Tab.Navigator headerShown={false} screenOptions={{
             headerShown: false,
-            tabBarStyle: { backgroundColor: '#E6F5EA', height: 103, padding: 20 },
+            tabBarStyle: { backgroundColor: '#E6F5EA', height: 93, padding: 25 },
         }}>
             <Tab.Screen options={{
                 tabBarLabel: 'Документы',
@@ -38,15 +38,6 @@ const TabNavigator = function ({ navigation }) {
                 ),
 
             }} name="Home" component={Home} />
-
-            <Tab.Screen options={{
-                tabBarLabel: 'Услуги',
-                tabBarLabelStyle: { color: '#000000' },
-                tabBarIcon: ({ focused }) => (
-                    <TabButton icon={!focused ? icons.order : icons.activeOrder}
-                    />
-                ),
-            }} name="Oder" component={Order} />
 
             <Tab.Screen options={{
                 tabBarLabel: 'Уведомления',
