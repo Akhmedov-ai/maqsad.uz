@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="set">
+    <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/screen/Auth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="eslint.code.style.apply.dismiss" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -38,9 +40,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -53,8 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638554637687</updated>
       <workItem from="1638554638972" duration="402000" />
-      <workItem from="1638603545328" duration="10810000" />
-      <workItem from="1638623294732" duration="3150000" />
+      <workItem from="1638603545328" duration="2591000" />
     </task>
     <task id="LOCAL-00001" summary="set">
       <created>1638602046839</created>
