@@ -1,20 +1,19 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
-import Home from './src/screen/Home/Home'
+import { createStackNavigator } from '@react-navigation/stack'
+import { NavigationContainer } from '@react-navigation/native'
+import TabNavigator from './src/TabNavigator'
 
-export default function App() {
-    return (
-        <View style={styles.container}>
-            <Home />
-        </View>
-    )
-}
+const Stack = createStackNavigator()
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-})
+const App = () => (
+    <NavigationContainer>
+        <Stack.Navigator
+            screenOptions={{ headerShown: false }}
+            cardOverlayEnabled={false}
+            initialRouteName="Home">
+            <Stack.Screen name="Home" options={{ headerShown: false }} component={TabNavigator} />
+        </Stack.Navigator>
+    </NavigationContainer>
+)
+
+export default App
