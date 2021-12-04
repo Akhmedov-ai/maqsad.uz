@@ -17,7 +17,7 @@ export default function PinCode() {
     useEffect(() => {
         if (enteredPin.length === 4) {
             setVisible(false)
-            navigation.navigate('Joined')
+            navigation.navigate('Home')
         }
     }, [enteredPin])
 

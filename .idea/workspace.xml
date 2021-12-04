@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="login 2">
-      <change afterPath="$PROJECT_DIR$/src/components/common/Svgs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screen/PinCode.jsx" afterDir="false" />
+    <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="pin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/Bank.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/OneId.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/SignIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/SignIn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/PinCode.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/PinCode.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

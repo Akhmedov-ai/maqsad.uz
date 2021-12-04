@@ -13,6 +13,7 @@ const Stack = createStackNavigator()
 
 const App = () => {
     const [loaded] = useFonts({
+        // eslint-disable-next-line global-require
         Bold: require('./assets/fonts/Raleway-Bold.ttf'),
     })
 
@@ -29,8 +30,8 @@ const App = () => {
                 <Stack.Screen name="Home" options={{ headerShown: false }} component={TabNavigator} />
                 <Stack.Screen name="Auth" options={{ headerShown: false }} component={Auth} />
                 <Stack.Screen name="SignIn" component={SignIn} />
-            <Stack.Screen name="PinCode" component={PinCode} />
-            <Stack.Screen name="OneId" component={OneId} />
+                <Stack.Screen name="PinCode" component={PinCode} />
+                <Stack.Screen name="OneId" component={OneId} />
                 <Stack.Screen name="Joined" component={Joined} />
             </Stack.Navigator>
         </NavigationContainer>
