@@ -27,11 +27,11 @@ const TabNavigator = function ({ navigation }) {
     return (
         <Tab.Navigator headerShown={false} screenOptions={{
             headerShown: false,
-            tabBarStyle: { backgroundColor: '#E6F5EA', height: 93, padding: 25 },
+            tabBarStyle: { backgroundColor: '#E6F5EA', height: 93, justifyContent: 'center', padding: 20 },
         }}>
             <Tab.Screen options={{
                 tabBarLabel: 'Документы',
-                tabBarLabelStyle: { color: '#000000' },
+                tabBarLabelStyle: { color: '#000000', marginBottom: 20 },
                 tabBarIcon: ({ focused }) => (
                     <TabButton icon={!focused ? icons.home : icons.activeHome}
                     />
@@ -41,7 +41,7 @@ const TabNavigator = function ({ navigation }) {
 
             <Tab.Screen options={{
                 tabBarLabel: 'Уведомления',
-                tabBarLabelStyle: { color: '#000000' },
+                tabBarLabelStyle: { color: '#000000', marginBottom: 20 },
                 tabBarIcon: ({ focused }) => (
                     <TabButton icon={!focused ? icons.notification : icons.activeNotification}
                     />
@@ -49,7 +49,7 @@ const TabNavigator = function ({ navigation }) {
             }} name="Notification" component={Bell} />
             <Tab.Screen options={{
                 tabBarLabel: 'Меню',
-                tabBarLabelStyle: { color: '#000000' },
+                tabBarLabelStyle: { color: '#000000', marginBottom: 20 },
                 tabBarIcon: () => (
                     <TabButton icon={icons.menu}
                     />

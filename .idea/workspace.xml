@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="set">
-      <change afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CovidTextButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Line.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TaxCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Title.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TabNavigator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638554637687</updated>
       <workItem from="1638554638972" duration="402000" />
-      <workItem from="1638603545328" duration="5676000" />
+      <workItem from="1638603545328" duration="6111000" />
     </task>
     <task id="LOCAL-00001" summary="set">
       <created>1638602046839</created>
