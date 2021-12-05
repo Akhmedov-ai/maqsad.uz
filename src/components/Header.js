@@ -1,15 +1,16 @@
 import React from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 import icons from '../../data/icons'
+import { COLORS } from '../../data/theme'
 
-const Header = ({ title }) => (
+const Header = ({ title, isHome }) => (
     <View
         style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
             paddingTop: 50,
-            backgroundColor: 'white',
             paddingBottom: 25,
+            backgroundColor: isHome ? COLORS.green1 : COLORS.white,
         }}>
         <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             <Image

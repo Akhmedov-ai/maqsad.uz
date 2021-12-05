@@ -5,6 +5,7 @@ import icons from '../data/icons'
 import Menu from './screen/Menu/Menu'
 import Home from './screen/Home/Home'
 import Notification from './screen/Bell/Bell'
+import { COLORS } from '../data/theme'
 
 const TabButton = function ({ icon, isFocused }) {
     return (
@@ -26,7 +27,7 @@ const TabNavigator = function ({ navigation }) {
     return (
         <Tab.Navigator headerShown={false} screenOptions={{
             headerShown: false,
-            tabBarStyle: { backgroundColor: '#E6F5EA', height: 93, justifyContent: 'center', padding: 20 },
+            tabBarStyle: { backgroundColor: COLORS.lightGray2, height: 93, justifyContent: 'center', padding: 20 },
         }}>
             <Tab.Screen options={{
                 tabBarLabel: 'Документы',

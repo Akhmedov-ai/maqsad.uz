@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Text,
     View,
-    StyleSheet,
     Image,
     Animated,
     Platform } from 'react-native'
@@ -45,7 +44,7 @@ export default function Home() {
                 {
                     titleList.map((item, index) => (
                         <View style={{
-                            backgroundColor: index === currentIndex ? COLORS.lightGrey : COLORS.gray,
+                            backgroundColor: index === currentIndex ? COLORS.black : COLORS.gray,
                             width: index === currentIndex ? 9.51 : 7,
                             height: index === currentIndex ? 9.51 : 7,
                             borderRadius: 888,
@@ -57,9 +56,21 @@ export default function Home() {
             </View>
         )
     }
+
+    function returnBackGroundColor(index) {
+        if (index === 0) {
+            return COLORS.white
+        }
+        if (index === 1) {
+            return COLORS.lightGrey
+        }
+        if (index === 2){
+            return  COLORS.
+        }
+    }
     return (
-        <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
-            <Header title="Документы" />
+        <View style={{ flex: 1, backgroundColor: COLORS.green1 }}>
+            <Header title="Документы" isHome />
             <Animated.FlatList
                 ref={flatListRef}
                 showsHorizontalScrollIndicator={false}
@@ -281,27 +292,3 @@ export default function Home() {
         </View>
     )
 }
-const styles = StyleSheet.create({
-    loadingContainer: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    container: {
-        flex: 1,
-    },
-    paragraph: {
-        margin: 24,
-        fontSize: 18,
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
-    posterImage: {
-        width: '100%',
-        height: ITEM_SIZE * 1.2,
-        resizeMode: 'cover',
-        borderRadius: 24,
-        margin: 0,
-        marginBottom: 10,
-    },
-})
