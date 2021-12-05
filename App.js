@@ -15,6 +15,8 @@ const App = () => {
     const [loaded] = useFonts({
         // eslint-disable-next-line global-require
         Bold: require('./assets/fonts/Raleway-Bold.ttf'),
+        // eslint-disable-next-line global-require
+        Medium: require('./assets/fonts/Raleway-Medium.ttf'),
     })
 
     if (!loaded) {
