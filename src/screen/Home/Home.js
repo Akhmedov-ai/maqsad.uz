@@ -41,6 +41,7 @@ export default function Home() {
                 flex: 1,
                 flexDirection: 'row',
                 justifyContent: 'center',
+                marginBottom: 20,
             }}>
                 {
                     titleList.map((item, index) => (
@@ -100,6 +101,7 @@ export default function Home() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 marginHorizontal: 20,
+                                marginTop: 30,
                                 height: Platform.OS === 'ios' ? SIZES.height * 0.55 : SIZES.height * 0.6,
                                 width: SIZES.width * 0.88,
                             }}>
