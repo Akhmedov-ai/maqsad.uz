@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b1c4826f-38f2-44e5-8541-3095b9001d01" name="Changes" comment="pin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TabNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Home/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1638554638972" duration="402000" />
       <workItem from="1638603545328" duration="2591000" />
       <workItem from="1638637337088" duration="6171000" />
-      <workItem from="1638694047093" duration="1133000" />
+      <workItem from="1638694047093" duration="1588000" />
     </task>
     <task id="LOCAL-00001" summary="set">
       <created>1638602046839</created>

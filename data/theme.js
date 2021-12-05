@@ -13,6 +13,8 @@ export const COLORS = {
     lightGray2: '#D2E1D6',
     lightGrey: '#E6F5EA',
     transparent: 'transparent',
+    blueTransparent: 'rgba(170, 43, 142, 0.1)',
+    lightBlue: '#D8E6EC',
     transparentWhite1: 'rgba(255, 255, 255, 0.1)',
     transparentBlack1: 'rgba(0, 0, 0, 0.1)',
     transparentBlack7: 'rgba(0, 0, 0, 0.7)',

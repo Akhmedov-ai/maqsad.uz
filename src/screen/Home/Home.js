@@ -61,11 +61,17 @@ export default function Home() {
         if (index === 0) {
             return COLORS.white
         }
+
         if (index === 1) {
             return COLORS.lightGrey
         }
-        if (index === 2){
-            return  COLORS.
+
+        if (index === 2) {
+            return COLORS.blueTransparent
+        }
+
+        if (index === 3) {
+            return COLORS.lightBlue
         }
     }
     return (
@@ -132,7 +138,7 @@ export default function Home() {
                                     shadowRadius: 3.84,
 
                                     elevation: 5,
-                                    backgroundColor: 'white',
+                                    backgroundColor: returnBackGroundColor(index),
                                 }}>
 
                                 {index === 0 && (
