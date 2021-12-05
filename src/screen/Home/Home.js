@@ -16,6 +16,7 @@ import Header from '../../components/Header'
 import { titleList } from '../../../data/api'
 import { COLORS, SIZES } from '../../../data/theme'
 import icons from '../../../data/icons'
+import { returnBackGroundColor } from '../utils/backgroundColor'
 
 const SPACING = -10
 const ITEM_SIZE = Platform.OS === 'ios' ? SIZES.width * 0.65 : SIZES.width * 0.66
@@ -57,23 +58,6 @@ export default function Home() {
         )
     }
 
-    function returnBackGroundColor(index) {
-        if (index === 0) {
-            return COLORS.white
-        }
-
-        if (index === 1) {
-            return COLORS.lightGrey
-        }
-
-        if (index === 2) {
-            return COLORS.blueTransparent
-        }
-
-        if (index === 3) {
-            return COLORS.lightBlue
-        }
-    }
     return (
         <View style={{ flex: 1, backgroundColor: COLORS.green1 }}>
             <Header title="Документы" isHome />
